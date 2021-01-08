@@ -1,2 +1,3 @@
 # chess
-Bullet chess ratings
+
+Predictions of bullet and blitz chess ratings
