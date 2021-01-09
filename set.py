@@ -18,15 +18,23 @@ URL_TEMPLATE = 'https://api.chess.com/pub/player/PLAYER/stats'
 CATEGORIES = ['chess_blitz', 'chess_bullet']
 
 if __name__ == '__main__':
-    # Chess.Com ratings
     for category in CATEGORIES:
         for handle, player in PLAYERS.items():
             url = URL_TEMPLATE.replace('PLAYER', handle)
             data = getjson(url)
             try:
-                value = data[category]['last']['rating']
-                name = category + '_' + player + '.json'
-                print( (name, value, mw.set(name=name,value=value) ) )
+                current_value = int(data[category]['last']['rating'])
+                level_name = category + '_level_'  + handle + '.json'         # Name of stream with rating level
+                print( (level_name, value, mw.set(name=name,value=value) ) )
+                try:
+                    previous_value = int(mw.get_current_value(name=level_name))
+                except:
+                    previous_value = None.  # Might not exist yet
+                if previous_value is not None:
+                    if previous_value != value:  
+                        # Somebody's been playing chess 
+                        change_name = level_name.replace('_level_','_change_')
+                        print( (change_name, value, mw.set(name=name,value=value) ) )
             except:
                 print(data)
 
