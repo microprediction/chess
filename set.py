@@ -12,7 +12,7 @@ PLAYERS = {'Hikaru': 'hikaru_nakamura',
            'LyonBeast': 'maxime_vachier_lagrave',
            'nihalsarin': 'nihal_sarin',
            'DanielNaroditsky': 'daniel_naroditsky',
-           'PinIsMightier': 'microprediction'}
+           'PinIsMightier': 'halloween_gambit'}
 
 URL_TEMPLATE = 'https://api.chess.com/pub/player/PLAYER/stats'
 CATEGORIES = ['chess_blitz', 'chess_bullet']
