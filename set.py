@@ -27,5 +27,5 @@ if __name__=='__main__':
        url = URL_TEMPLATE.replace('PLAYER',player)
        data = getjson(url)
        value = data[category]['last']['rating']
-       name  = category+'_'+player+'.json'
-       mw.write(name=name,value=value)
+       name  = category+'_'+handle+'.json'
+       mw.set(name=name,value=value)
