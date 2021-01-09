@@ -1,8 +1,8 @@
-name: run
+name: changes
 
 on:
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '*/15 * * * *'
 
 defaults:
   run:
@@ -32,4 +32,4 @@ jobs:
         env:
           WRITE_KEY: ${{ secrets.WRITE_KEY }}
         run: |
-          python set.py
+          python changes.py
