@@ -14,18 +14,18 @@ PLAYERS = {'Hikaru': 'hikaru_nakamura',
            'DanielNaroditsky': 'daniel_naroditsky',
            'PinIsMightier': 'halloween_gambit'}
 
-URL_TEMPLATE = 'https://api.chess.com/pub/player/PLAYER/stats'
+URL_TEMPLATE = 'https://api.chess.com/pub/player/HANDLE/stats'
 CATEGORIES = ['chess_blitz', 'chess_bullet']
 
 if __name__ == '__main__':
     # Chess.Com ratings
     for category in CATEGORIES:
         for handle, player in PLAYERS.items():
-            url = URL_TEMPLATE.replace('PLAYER', handle)
+            url = URL_TEMPLATE.replace('HANDLE', handle)
             data = getjson(url)
             try:
                 value = data[category]['last']['rating']
-                name = category + '_' + handle + '.json'
+                name = category + '_daily_' + handle + '.json'
                 print( (name, value, mw.set(name=name,value=value) ) )
             except:
                 print(data)
