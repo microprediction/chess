@@ -29,7 +29,7 @@ if __name__ == '__main__':
                 try:
                     previous_value = int(mw.get_current_value(name=level_name))
                 except:
-                    previous_value = None.  # Might not exist yet
+                    previous_value = None                       # Might not exist yet
                 if previous_value is not None:
                     if previous_value != value:  
                         # Somebody's been playing chess 
