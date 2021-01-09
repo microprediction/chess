@@ -32,4 +32,4 @@ jobs:
         env:
           WRITE_KEY: ${{ secrets.WRITE_KEY }}
         run: |
-          python changes.py
+          python set.py
