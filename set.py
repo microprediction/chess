@@ -14,15 +14,15 @@ PLAYERS = {'Hikaru': 'hikaru_nakamura',
            'DanielNaroditsky': 'daniel_naroditsky',
            'PinIsMightier': 'halloween_gambit'}
 
-URL_TEMPLATE = 'https://api.chess.com/pub/player/PLAYER/stats'
+URL_TEMPLATE = 'https://api.chess.com/pub/player/HANDLE/stats'
 CATEGORIES = ['chess_blitz', 'chess_bullet']
 
 if __name__ == '__main__':
     for category in CATEGORIES:
         for handle, player in PLAYERS.items():
-            url = URL_TEMPLATE.replace('PLAYER', handle)
+            url = URL_TEMPLATE.replace('HANDLE', handle.lower())
             data = getjson(url)
-            try:
+            if data is not None:
                 current_value = int(data[category]['last']['rating'])
                 level_name = category + '_level_'  + handle + '.json'         # Name of stream with rating level
                 print( (level_name, value, mw.set(name=name,value=value) ) )
@@ -35,7 +35,7 @@ if __name__ == '__main__':
                         # Somebody's been playing chess 
                         change_name = level_name.replace('_level_','_change_')
                         print( (change_name, value, mw.set(name=name,value=value) ) )
-            except:
-                print(data)
-
+            else:
+                print(url)
+           
       
