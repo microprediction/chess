@@ -33,6 +33,7 @@ if __name__ == '__main__':
                 if previous_value is not None:
                     if previous_value != value:  
                         # Somebody's been playing chess 
+                        value = current_value - previous_value
                         change_name = level_name.replace('_level_','_change_')
                         print( (change_name, value, mw.set(name=name,value=value) ) )
             else:
