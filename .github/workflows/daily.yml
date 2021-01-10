@@ -2,7 +2,7 @@ name: daily chess
 
 on:
   schedule:
-    - cron:  '* 20 * * *'
+    - cron:  '6 0 * * *'
 
 defaults:
   run:
