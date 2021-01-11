@@ -25,13 +25,13 @@ if __name__ == '__main__':
             if data is not None:
                 current_value = int(data[category]['last']['rating'])
                 level_name = category + '_level_'  + handle + '.json'         # Name of stream with rating level
-                print( (level_name, current_value, mw.set(name=name,value=current_value) ) )
+                print( (level_name, current_value, mw.set(name=level_name,value=current_value) ) )
                 try:
                     previous_value = int(mw.get_current_value(name=level_name))
                 except:
                     previous_value = None                       # Might not exist yet
                 if previous_value is not None:
-                    if previous_value != value:  
+                    if int(previous_value) != int(current_value):  
                         # Somebody's been playing chess 
                         change_value = current_value - previous_value
                         change_name = level_name.replace('_level_','_change_')
