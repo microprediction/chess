@@ -25,7 +25,7 @@ if __name__ == '__main__':
             if data is not None:
                 current_value = int(data[category]['last']['rating'])
                 level_name = category + '_level_'  + handle + '.json'         # Name of stream with rating level
-                print( (level_name, value, mw.set(name=name,value=value) ) )
+                print( (level_name, current_value, mw.set(name=name,value=current_value) ) )
                 try:
                     previous_value = int(mw.get_current_value(name=level_name))
                 except:
