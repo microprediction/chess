@@ -6,20 +6,27 @@ write_key = os.environ.get('WRITE_KEY')    # GitHub action needs to set env vari
 mw = MicroWriter(write_key=write_key)
 assert mw.key_difficulty(mw.write_key)>=12, "You need a key of difficulty 12 to create a stream"
 
-PLAYERS = {'Hikaru': 'hikaru_nakamura',
-           'Firouzja2003': 'alireza_firouzja',
-           'GMWSO': 'wesley_so',
-           'LyonBeast': 'maxime_vachier_lagrave',
-           'nihalsarin': 'nihal_sarin',
-           'DanielNaroditsky': 'daniel_naroditsky',
-           'PinIsMightier': 'halloween_gambit'}
+# Active players
+ACTIVE = {'blitz':{'Hikaru': 'hikaru_nakamura',
+                    'Firouzja2003': 'alireza_firouzja',
+                    'nihalsarin':'nihal_sarin',
+                    'DanielNaroditsky': 'daniel_naroditsky'
+                  },
+          'bullet':{'Hikaru': 'hikaru_nakamura',
+                   'Firouzja2003': 'alireza_firouzja',
+                   'DanielNaroditsky': 'daniel_naroditsky',
+                   'penguingm1':'andrew_tang',
+                    'wonderfultime':'tuan_minh_le',
+                    'PinIsMightier':'peter_cotton'
+                   }
+            }
 
 URL_TEMPLATE = 'https://api.chess.com/pub/player/HANDLE/stats'
 CATEGORIES = ['chess_blitz', 'chess_bullet']
 
 if __name__ == '__main__':
     for category in CATEGORIES:
-        for handle, player in PLAYERS.items():
+        for handle, player in ACTIVE[category].items():
             url = URL_TEMPLATE.replace('HANDLE', handle.lower())
             data = getjson(url)
             if data is not None:
