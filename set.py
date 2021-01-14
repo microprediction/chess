@@ -7,12 +7,12 @@ mw = MicroWriter(write_key=write_key)
 assert mw.key_difficulty(mw.write_key)>=12, "You need a key of difficulty 12 to create a stream"
 
 # Active players
-ACTIVE = {'blitz':{'Hikaru': 'hikaru_nakamura',
+ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'Firouzja2003': 'alireza_firouzja',
                     'nihalsarin':'nihal_sarin',
                     'DanielNaroditsky': 'daniel_naroditsky'
                   },
-          'bullet':{'Hikaru': 'hikaru_nakamura',
+          'chess_bullet':{'Hikaru': 'hikaru_nakamura',
                    'Firouzja2003': 'alireza_firouzja',
                    'DanielNaroditsky': 'daniel_naroditsky',
                    'penguingm1':'andrew_tang',
