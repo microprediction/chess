@@ -37,7 +37,7 @@ if __name__ == '__main__':
                     print('No previous value for '+level_name)
                     print( mw.set(name=level_name,value=current_value) )
                 else:
-                    if int(previous_value) != int(current_value):  
+                    if int(float(previous_value)) != int(float(current_value)):  
                         print( mw.set(name=level_name,value=current_value) ) 
                         print( level_name+' updated to '+str(current_value) )
                     else:
