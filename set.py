@@ -34,10 +34,7 @@ if __name__ == '__main__':
                 else:
                     if int(previous_value) != int(current_value):  
                         # Somebody's been playing chess 
-                        change_value = current_value - previous_value
-                        change_name = level_name.replace('_level_','_change_')
                         print( (level_name, current_value, mw.set(name=level_name,value=current_value) ) )
-                        print( (change_name, change_value, mw.set(name=change_name,value=change_value) ) )
                     else:
                         print( (level_name, current_value, 'unchanged') )
             else:
