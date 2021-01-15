@@ -11,13 +11,15 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'Firouzja2003': 'alireza_firouzja',
                     'nihalsarin':'nihal_sarin',
                     'DanielNaroditsky': 'daniel_naroditsky'
+                    'FarOctopus':'morgan_lu',
                   },
           'chess_bullet':{'Hikaru': 'hikaru_nakamura',
                    'Firouzja2003': 'alireza_firouzja',
                    'DanielNaroditsky': 'daniel_naroditsky',
                    'penguingm1':'andrew_tang',
                     'wonderfultime':'tuan_minh_le',
-                    'PinIsMightier':'peter_cotton'
+                    'PinIsMightier':'peter_cotton',
+                    'FarOctopus':'morgan_lu'
                    }
             }
 
