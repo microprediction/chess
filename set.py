@@ -32,7 +32,7 @@ if __name__ == '__main__':
             if data is not None:
                 current_value = int(data[category]['last']['rating'])
                 level_name = category + '_level_'  + handle + '.json'         # Name of stream with rating level
-                previous_value = int(mw.get_current_value(name=level_name))
+                previous_value = mw.get_current_value(name=level_name)
                 if previous_value is None:
                     print('No previous value for '+level_name)
                     print( mw.set(name=level_name,value=current_value) )
