@@ -10,8 +10,8 @@ assert mw.key_difficulty(mw.write_key)>=12, "You need a key of difficulty 12 to 
 ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'Firouzja2003': 'alireza_firouzja',
                     'nihalsarin':'nihal_sarin',
-                    'DanielNaroditsky': 'daniel_naroditsky'
-                    'FarOctopus':'morgan_lu',
+                    'DanielNaroditsky': 'daniel_naroditsky',
+                    'FarOctopus':'morgan_lu'
                   },
           'chess_bullet':{'Hikaru': 'hikaru_nakamura',
                    'Firouzja2003': 'alireza_firouzja',
