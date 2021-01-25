@@ -4,7 +4,7 @@ This gitaction-powered mini-project demonstrates the use of the general purpose 
 
 | Player            | Home                                                              | Blitz                                                                                                   |
 |-------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Hikaru Nakamura   | [Hikaru](https://www.chess.com/member/hikaru)                     | [on change](https://www.microprediction.org/stream_dashboard.html?stream=chess_blitz_level_Hikaru),  [daily blitz](https://www.microprediction.org/stream_dashboard.html?stream=chess_blitz_daily_Hikaru)            |
+| Hikaru Nakamura   | [Hikaru](https://www.chess.com/member/hikaru)                     | [on change](https://www.microprediction.org/stream_dashboard.html?stream=chess_blitz_level_Hikaru),  [daily](https://www.microprediction.org/stream_dashboard.html?stream=chess_blitz_daily_Hikaru)            |
 | Daniel Naroditsky | [DanielNaroditsky](https://www.chess.com/member/danielnaroditsky) | [on change](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_level_DanielNaroditsky), [daily](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_daily_DanielNaroditsky) |
 | Alireza Firouzja  | [Firouzja2003](https://www.chess.com/member/firouzja2003)         | [on change](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_level_Firouzja2003), [daily](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_daily_Firouzja2003)     |
 
