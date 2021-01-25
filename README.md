@@ -4,9 +4,9 @@ This gitaction-powered mini-project demonstrates the use of the general purpose 
 
 | Player            | Home                                                              | Ratings                                                                                                   |
 |-------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Hikaru Nakamura   | [Hikaru](https://www.chess.com/member/hikaru)                     | [blitz](https://www.microprediction.org/stream_dashboard.html?stream=chess_blitz_level_Hikaru)            |
-| Daniel Naroditsky | [DanielNaroditsky](https://www.chess.com/member/danielnaroditsky) | [blitz](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_level_DanielNaroditsky) |
-| Alireza Firouzja  | [Firouzja2003](https://www.chess.com/member/firouzja2003)         | [blitz](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_level_Firouzja2003)     |
+| Hikaru Nakamura   | [Hikaru](https://www.chess.com/member/hikaru)                     | [hourly](https://www.microprediction.org/stream_dashboard.html?stream=chess_blitz_level_Hikaru)            |
+| Daniel Naroditsky | [DanielNaroditsky](https://www.chess.com/member/danielnaroditsky) | [hourly](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_level_DanielNaroditsky) |
+| Alireza Firouzja  | [Firouzja2003](https://www.chess.com/member/firouzja2003)         | [hourly](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_level_Firouzja2003)     |
 
 ... and some not-so-top players. We're more than happy to include your rating too. Make a pull requests with your chess.com user handle to [set.py](https://github.com/microprediction/chess/blob/main/set.py) or just leave an issue with your chess.come username. 
 
