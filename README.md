@@ -8,6 +8,6 @@ The script, run every hour, creates a stream like [this one](https://www.micropr
 
 There's more at www.microprediction.com/blog about chess and data science. 
 
-Oh yeah, and if you want to increase your bullet rating by 100, just play the Halloween Gambit! See our little [chess blog](www.chess.com/blog/microprediction).  
+Oh yeah, and if you want to increase your bullet rating by 100, use right click to cancel pre-moves. And play the Halloween Gambit! See our little [chess blog](www.chess.com/blog/microprediction).  
 
 
