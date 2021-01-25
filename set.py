@@ -24,7 +24,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                    'penguingm1':'andrew_tang',
                     'wonderfultime':'tuan_minh_le',
                     'PinIsMightier':'peter_cotton',
-                    'FarOctopus':'morgan_lu'
+                    'FarOctopus':'morgan_lu',
+                     'sshivaji':'shivkumar shivaji'
                    }
             }
 
