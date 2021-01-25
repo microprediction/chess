@@ -22,7 +22,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'PinIsMightier':'peter_cotton',
                     'FarOctopus':'morgan_lu',
                     'viswanath270':'viswanath thatha',
-                          'caldyc':'chris calderwood'
+                          'caldyc':'chris calderwood',
+                          'swamijs':'swamijs'
                    }
             }
 
