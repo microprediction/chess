@@ -48,6 +48,7 @@ if __name__ == '__main__':
                         print( level_name+' updated to '+str(current_value) )
                     else:
                         print( (level_name, current_value, ' is unchanged') )
+                        print( mw.touch(name=level_name) ) 
             else:
                 print(url)
            
