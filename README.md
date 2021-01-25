@@ -12,6 +12,8 @@ This gitaction-powered mini-project demonstrates the use of the general purpose 
 
 The script [set.py](https://github.com/microprediction/chess/blob/main/set.py) runs every hour, and creates a stream like [this one](https://www.microprediction.org/stream_dashboard.html?stream=chess_bullet_level_DanielNaroditsky). That stream is monitored by lots of time series algorithms who fight for supremacy. The result is distributional predictions that get slowly better over time and incorporate more exogenous data. For instance the algorithms have access to all public data including all games played. More soon at www.microprediction.com/blog about chess and the statistics of bullet opennings. 
 
-Oh yeah, and if you want to increase your bullet rating by 100, use right click to cancel pre-moves. And play the Halloween Gambit! See our little [chess blog](www.chess.com/blog/microprediction).  
+Oh yeah, and if you want to increase your bullet rating by 100 you can:
+- Use right click to cancel pre-moves.
+- Play the Halloween Gambit! See [chess blog](https://www.chess.com/blog/microprediction).  
 
 
