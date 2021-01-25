@@ -14,6 +14,6 @@ The script [set.py](https://github.com/microprediction/chess/blob/main/set.py) r
 
 Oh yeah, and if you want to increase your bullet rating by 100 you can:
 - Use right click to cancel pre-moves.
-- Play the Halloween Gambit! See [chess blog](https://www.chess.com/blog/microprediction).  
+- Play the Halloween Gambit! See [The Halloween Gambit is Scarier Than Your Think](https://www.chess.com/blog/PinIsMightier/the-halloween-gambit-is-scarier-than-you-think-4).  
 
 
