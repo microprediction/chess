@@ -16,4 +16,6 @@ Oh yeah, and if you want to increase your bullet rating by 100 you can:
 - Use right click to cancel pre-moves.
 - Play the Halloween Gambit! See [The Halloween Gambit is Scarier Than Your Think](https://www.chess.com/blog/PinIsMightier/the-halloween-gambit-is-scarier-than-you-think-4).  
 
+Coming soon... analysis of Nakamura's bullet opening choices
 
+![](https://github.com/microprediction/chess/blob/main/bullet-chess-ai.png)
