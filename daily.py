@@ -1,10 +1,10 @@
 from getjson import getjson
 from microprediction import MicroWriter
-from config import ACTIVE, mw, URL_TEMPLATE
+from config import CATEGORIES, ACTIVE, mw, URL_TEMPLATE
 
 if __name__ == '__main__':
-    for category in CATEGORIES:
-        for handle, player in ACTIVE.items():
+    for category in ACTIVE.keys():
+        for handle, player in ACTIVE[category].items():
             url = URL_TEMPLATE.replace('HANDLE', handle)
             data = getjson(url)
             try:
