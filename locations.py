@@ -37,7 +37,7 @@ def dump_summary():
            with open(summary_html_file,'wt') as fp:
                fp.write(summary_html)
                 
-           summary_md = parseJSON(json_data=summary, depth=0)
+           summary_md = parseJSON(summary, depth=0)
            with open(summary_md_file,'wt') as fp:
                fp.write(summary_md) 
 
