@@ -29,3 +29,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                           'Trilobe8','nik sykiotis'
                    }
             }
+
+if __name__=='__main__':
+   # Ensures no syntax errors
+   from pprint import pprint
+   pprint(ACTIVE)
