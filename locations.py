@@ -15,7 +15,7 @@ def dump_summary():
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()+os.path.sep+category
            summary_file = directory+os.path.sep+'summary.json'
            try:
-              os.mkdirs(directory)
+              os.makedirs(directory)
            except Exception as e:
               print(e)
            with open(summary_file,'wt') as f:
