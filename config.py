@@ -44,8 +44,7 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                          'GMWSO': 'wesley so',
                          'LyonBeast': 'maxime vachier lagrave',
                          'nihalsarin': 'nihal sarin',
-                         'DanielNaroditsky': 'daniel naroditsky',
-                         'PinIsMightier': 'peter cotton'}
+                         'DanielNaroditsky': 'daniel naroditsky'}
                        }
 
 if __name__=='__main__':
