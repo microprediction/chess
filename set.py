@@ -1,3 +1,5 @@
+# This script is run elsewhere, once a minute, so as not to tax GitHub actions
+
 from getjson import getjson
 from config import ACTIVE, URL_TEMPLATE, mw
 
