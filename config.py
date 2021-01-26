@@ -28,7 +28,14 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                           'erik':'erick allebest',
                           'Trilobe8':'nik sykiotis'
                    }
-            }
+          'chess_rapid':{'Hikaru': 'hikaru_nakamura',
+                         'Firouzja2003': 'alireza_firouzja',
+                         'GMWSO': 'wesley_so',
+                         'LyonBeast': 'maxime_vachier_lagrave',
+                         'nihalsarin': 'nihal_sarin',
+                         'DanielNaroditsky': 'daniel_naroditsky',
+                         'PinIsMightier': 'halloween_gambit'}
+                       }
 
 if __name__=='__main__':
    # Ensures no syntax errors
