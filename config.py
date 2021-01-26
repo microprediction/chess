@@ -15,8 +15,18 @@ print(mw.animal)
 URL_TEMPLATE = 'https://api.chess.com/pub/player/HANDLE/stats'
 CATEGORIES = ['chess_blitz', 'chess_bullet']
 
+
+# Streams
+STREAM_URL_TEMPLATE = 'https://www.microprediction.org/stream_dashboard.html?stream=chess_CATEGORY_TYPE_HANDLE
+STREAM_TYPES = ['daily','level','change']
+ANALYSIS_DIR = 'analysis'
+
+def stream_url(category,stream_type,handle):
+     return STEAM_URL_TEMPLATE.replace('CATEGORY',category).replace('TYPE',stream_type).replace('HANDLE',handle)
+
+   
 # Active players
-# Try not to add if it will just create a constant stream
+# (Try not to add if it will just create a constant stream)
 ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'Firouzja2003': 'alireza_firouzja',
                     'nihalsarin':'nihal_sarin',
