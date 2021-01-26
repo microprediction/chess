@@ -12,6 +12,7 @@ URL_TEMPLATE = 'https://api.chess.com/pub/player/HANDLE/stats'
 CATEGORIES = ['chess_blitz', 'chess_bullet']
 
 # Active players
+# Try not to add if it will just create a constant stream
 ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'Firouzja2003': 'alireza_firouzja',
                     'nihalsarin':'nihal_sarin',
