@@ -2,6 +2,7 @@ from config import ACTIVE, URL_TEMPLATE, STREAM_URL_TEMPLATE, STREAM_TYPES, ANAL
 import os
 import json
 from pprint import pprint
+import errno
 
 def dump_summary():
   CATEGORIES = ACTIVE.keys()
@@ -15,10 +16,13 @@ def dump_summary():
            pprint(summary)
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()+os.path.sep+category
            summary_file = directory+os.path.sep+'summary.json'
+            
            try:
               os.makedirs(directory)
-           except Exception as e:
-              print(e)
+           except OSError as e:
+              if e.errno != errno.EEXIST:
+                  os.makedirs(directory)
+                  
            with open(summary_file,'wt') as f:
               json.dump(summary,summary_file)
 
