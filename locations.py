@@ -30,7 +30,7 @@ def dump_summary():
               
            summary_html = json2html.convert(summary)
            with open(summary_html_file,'wt') as fp:
-              write(summary_html)
+               fp.write(summary_html)
 
  
 if __name__=='__main__':
