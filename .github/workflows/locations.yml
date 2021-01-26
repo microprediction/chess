@@ -32,6 +32,7 @@ jobs:
             python -m pip install --upgrade pip
             pip install git+https://github.com/microprediction/microprediction.git
             pip install --upgrade getjson
+            pip install json2html
       - name: locations
         env:
           WRITE_KEY: ${{ secrets.WRITE_KEY }}
