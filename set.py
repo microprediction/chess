@@ -1,7 +1,8 @@
-# This script is run elsewhere, once a minute, so as not to tax GitHub actions
+# This script is run elsewhere, so as not to tax GitHub actions
 
 from getjson import getjson
 from config import ACTIVE, URL_TEMPLATE, mw
+import time
 
 if __name__ == '__main__':
     for _ in range(60):
