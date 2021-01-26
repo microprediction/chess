@@ -26,25 +26,25 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                          'erik':'erick allebest',    # Founder of chess.com 
                          'Trilobe8':'nik sykiotis'
                   },
-          'chess_bullet':{'Hikaru': 'hikaru_nakamura',
-                   'Firouzja2003': 'alireza_firouzja',
-                   'DanielNaroditsky': 'daniel_naroditsky',
-                   'penguingm1':'andrew_tang',
-                    'wonderfultime':'tuan_minh_le',
-                    'PinIsMightier':'peter_cotton',
-                    'FarOctopus':'morgan_lu',
+          'chess_bullet':{'Hikaru': 'hikaru nakamura',
+                   'Firouzja2003': 'alireza firouzja',
+                   'DanielNaroditsky': 'daniel naroditsky',
+                   'penguingm1':'andrew tang',
+                    'wonderfultime':'tuan minh le',
+                    'PinIsMightier':'peter cotton',
+                    'FarOctopus':'morgan lu',
                      'sshivaji':'shivkumar shivaji',
                       '9epoch':'nathan szeitli',
                           'erik':'erick allebest',
                           'Trilobe8':'nik sykiotis'
                    },
-          'chess_rapid':{'Hikaru': 'hikaru_nakamura',
-                         'Firouzja2003': 'alireza_firouzja',
-                         'GMWSO': 'wesley_so',
-                         'LyonBeast': 'maxime_vachier_lagrave',
-                         'nihalsarin': 'nihal_sarin',
-                         'DanielNaroditsky': 'daniel_naroditsky',
-                         'PinIsMightier': 'halloween_gambit'}
+          'chess_rapid':{'Hikaru': 'hikaru nakamura',
+                         'Firouzja2003': 'alireza firouzja',
+                         'GMWSO': 'wesley so',
+                         'LyonBeast': 'maxime vachier lagrave',
+                         'nihalsarin': 'nihal sarin',
+                         'DanielNaroditsky': 'daniel naroditsky',
+                         'PinIsMightier': 'peter cotton'}
                        }
 
 if __name__=='__main__':
