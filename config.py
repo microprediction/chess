@@ -4,6 +4,7 @@ import os
 
 # Microprediction writer 
 write_key = os.environ.get('WRITE_KEY')    # GitHub action needs to set env variable. You need to create a GitHub secret called WRITE_KEY
+print(write_key)
 mw = MicroWriter(write_key=write_key)
 assert mw.key_difficulty(mw.write_key)>=12, "You need a key of difficulty 12 to create a stream"
 print(mw.animal)
