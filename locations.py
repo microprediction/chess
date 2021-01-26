@@ -37,7 +37,7 @@ def dump_summary():
                 
            with open(readme_md_file,'wt') as fp:
                fp.write('### Analysis for ' + handle )
-               fp.write('- View [raw]('+summary['raw']+') markdown for links to streams') 
+               fp.write('- View [raw]('+summary['urls']['raw']+') markdown for links to streams') 
 
  
 if __name__=='__main__':
