@@ -5,10 +5,10 @@ import os
 def dump_summary():
   for category in ACTIVE.keys():
       for handle, player in ACTIVE[category].items():
-           player = {'urls':{'stats':'URL_TEMPLATE.replace('HANDLE', handle.lower())',
-                    'level': stream_url(category=category,handle=handle, stream_type='level'),
-                    'change':stream_url(category=category,handle=handle, stream_type='level'),
-                    'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
+           player = {'urls':{'stats':URL_TEMPLATE.replace('HANDLE', handle.lower())',
+                    category+'_'+'level': stream_url(category=category,handle=handle, stream_type='level'),
+                    category+'_'+'change':stream_url(category=category,handle=handle, stream_type='change'),
+                    category+'_'+'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()
            summary_file = directory+os.path.sep+'summary.json'
            try:
