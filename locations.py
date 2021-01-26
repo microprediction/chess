@@ -5,7 +5,7 @@ import json
 def dump_summary():
   for category in ACTIVE.keys():
       for handle, player in ACTIVE[category].items():
-           player = {'urls':{'stats':URL_TEMPLATE.replace('HANDLE', handle.lower() ),
+           summary = {'urls':{'stats':URL_TEMPLATE.replace('HANDLE', handle.lower() ),
                               category+'_'+'level': stream_url(category=category,handle=handle, stream_type='level'),
                               category+'_'+'change':stream_url(category=category,handle=handle, stream_type='change'),
                               category+'_'+'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
