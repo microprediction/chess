@@ -39,7 +39,10 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                           'swamijs':'swamijs',
                          '9epoch':'nathan szeitli',
                          'erik':'erick allebest',    # Founder of chess.com 
-                         'Trilobe8':'nik sykiotis'
+                         'Trilobe8':'nik sykiotis',
+                          'PeterDoggers':'peter doggers',
+                         'MikeKlein':'mike klein',
+                         'DanielRensch':'daniel rensch'
                   },
           'chess_bullet':{'Hikaru': 'hikaru nakamura',
                    'Firouzja2003': 'alireza firouzja',
@@ -51,7 +54,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                      'sshivaji':'shivkumar shivaji',
                       '9epoch':'nathan szeitli',
                           'erik':'erick allebest',
-                          'Trilobe8':'nik sykiotis'
+                          'Trilobe8':'nik sykiotis',
+                          'PeterDoggers':'peter doggers'
                    },
           'chess_rapid':{'Hikaru': 'hikaru nakamura',
                          'Firouzja2003': 'alireza firouzja',
