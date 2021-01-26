@@ -1,6 +1,4 @@
-import os
 from getjson import getjson
-from microprediction import MicroWriter
 from config import ACTIVE, URL_TEMPLATE, CATEGORIES, mw
 
 if __name__ == '__main__':
