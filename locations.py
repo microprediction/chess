@@ -4,8 +4,6 @@ import json
 from pprint import pprint
 import errno
 from json2html import *
-import torsimany
-from torsimany.torsimany import parseJSON
 
 def dump_summary():
   CATEGORIES = ACTIVE.keys()
