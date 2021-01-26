@@ -13,6 +13,7 @@ print(mw.animal)
 
 # Chess.com 
 URL_TEMPLATE = 'https://api.chess.com/pub/player/HANDLE/stats'
+HOME_TEMPLATE= 'https://www.chess.com/member/HANDLE'
 
 
 # Microprediction.Org
