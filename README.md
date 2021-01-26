@@ -4,7 +4,7 @@ Looking for your own rating time series? See the analysis directory.
 
 
 This little repo comprises little more than [one little script](https://github.com/microprediction/chess/blob/main/set.py), but that's all it
-takes to use the general purpose prediction [api](http://api.microprediction.org/) and forecast bullet and blitz chess ratings for top players:
+takes to use a new, free, general purpose prediction [api](http://api.microprediction.org/) to forecast bullet and blitz chess ratings for top players:
 
 | Player            | Home                                                              | Blitz                                                                                                   |
 |-------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
