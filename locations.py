@@ -4,6 +4,7 @@ import json
 from pprint import pprint
 import errno
 from json2html import *
+from torsimany.torsimany import justdoit
 
 def dump_summary():
   CATEGORIES = ACTIVE.keys()
@@ -18,6 +19,8 @@ def dump_summary():
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()+os.path.sep+category
            summary_json_file = directory+os.path.sep+'locations.json'
            summary_html_file = directory+os.path.sep+'locations.html'
+           summary_md_file = directory+os.path.sep+'locations.md'
+           
             
            try:
               os.makedirs(directory)
@@ -31,6 +34,8 @@ def dump_summary():
            summary_html = json2html.convert(summary)
            with open(summary_html_file,'wt') as fp:
                fp.write(summary_html)
+                
+           torsimany.justdoit(input_file=summary_json_file,output_file=summary_md_file)
 
  
 if __name__=='__main__':
