@@ -17,7 +17,7 @@ CATEGORIES = ['chess_blitz', 'chess_bullet']
 
 
 # Streams
-STREAM_URL_TEMPLATE = 'https://www.microprediction.org/stream_dashboard.html?stream=chess_CATEGORY_TYPE_HANDLE
+STREAM_URL_TEMPLATE = 'https://www.microprediction.org/stream_dashboard.html?stream=chess_CATEGORY_TYPE_HANDLE'
 STREAM_TYPES = ['daily','level','change']
 ANALYSIS_DIR = 'analysis'
 
