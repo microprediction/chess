@@ -13,11 +13,10 @@ print(mw.animal)
 
 # Chess.com 
 URL_TEMPLATE = 'https://api.chess.com/pub/player/HANDLE/stats'
-CATEGORIES = ['chess_blitz', 'chess_bullet']
 
 
-# Streams
-STREAM_URL_TEMPLATE = 'https://www.microprediction.org/stream_dashboard.html?stream=chess_CATEGORY_TYPE_HANDLE'
+# Microprediction.Org
+STREAM_URL_TEMPLATE = 'https://www.microprediction.org/stream_dashboard.html?stream=CATEGORY_TYPE_HANDLE'
 STREAM_TYPES = ['daily','level','change']
 ANALYSIS_DIR = 'analysis'
 
