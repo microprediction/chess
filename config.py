@@ -22,7 +22,7 @@ STREAM_TYPES = ['daily','level','change']
 ANALYSIS_DIR = 'analysis'
 
 def stream_url(category,stream_type,handle):
-     return STEAM_URL_TEMPLATE.replace('CATEGORY',category).replace('TYPE',stream_type).replace('HANDLE',handle)
+     return STREAM_URL_TEMPLATE.replace('CATEGORY',category).replace('TYPE',stream_type).replace('HANDLE',handle)
 
    
 # Active players
