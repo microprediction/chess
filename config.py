@@ -1,5 +1,6 @@
 from microprediction import MicroWriter
 import json
+import os 
 
 # Microprediction writer 
 write_key = os.environ.get('WRITE_KEY')    # GitHub action needs to set env variable. You need to create a GitHub secret called WRITE_KEY
