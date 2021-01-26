@@ -22,7 +22,7 @@ if __name__ == '__main__':
                         else:
                             if int(float(previous_value)) != int(float(current_value)):
                                 mw.set(name=level_name,value=current_value)
-                                mw.set(name=change_name,value=current_value-previous_value)
+                                mw.set(name=change_name,value=float(current_value)-float(previous_value))
                                 print( level_name+' updated to '+str(current_value) )
                             else:
                                 mw.touch(name=level_name)
