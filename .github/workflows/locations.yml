@@ -33,6 +33,7 @@ jobs:
             pip install git+https://github.com/microprediction/microprediction.git
             pip install --upgrade getjson
             pip install json2html
+            pip install torsimany
       - name: locations
         env:
           WRITE_KEY: ${{ secrets.WRITE_KEY }}
