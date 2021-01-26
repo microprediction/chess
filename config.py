@@ -33,7 +33,7 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                       '9epoch':'nathan szeitli',
                           'erik':'erick allebest',
                           'Trilobe8':'nik sykiotis'
-                   }
+                   },
           'chess_rapid':{'Hikaru': 'hikaru_nakamura',
                          'Firouzja2003': 'alireza_firouzja',
                          'GMWSO': 'wesley_so',
