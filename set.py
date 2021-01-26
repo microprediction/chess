@@ -17,7 +17,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'viswanath270':'viswanath thatha',
                           'caldyc':'chris calderwood',
                           'swamijs':'swamijs',
-                         '9epoch':'nathan szeitli'
+                         '9epoch':'nathan szeitli',
+                         'erik','erick allebest'
                   },
           'chess_bullet':{'Hikaru': 'hikaru_nakamura',
                    'Firouzja2003': 'alireza_firouzja',
@@ -27,7 +28,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                     'PinIsMightier':'peter_cotton',
                     'FarOctopus':'morgan_lu',
                      'sshivaji':'shivkumar shivaji',
-                      '9epoch':'nathan szeitli'
+                      '9epoch':'nathan szeitli',
+                          'erik':'erick allebest'
                    }
             }
 
