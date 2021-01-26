@@ -1,6 +1,7 @@
 # chess
 
-This micro-repo comprises little more than [one little script](https://github.com/microprediction/chess/blob/main/set.py), but that's all it takes to use of the general purpose time series prediction [api](http://api.microprediction.org/) to source predictions of bullet and blitz chess ratings for top players
+This micro-repo comprises little more than [one little script](https://github.com/microprediction/chess/blob/main/set.py), but that's all it
+takes to use the general purpose prediction [api](http://api.microprediction.org/) and forecast bullet and blitz chess ratings for top players:
 
 | Player            | Home                                                              | Blitz                                                                                                   |
 |-------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
