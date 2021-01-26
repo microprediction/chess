@@ -5,7 +5,6 @@ from config import ACTIVE, URL_TEMPLATE, mw
 import time
 
 if __name__ == '__main__':
-    for _ in range(60):
         start_time = time.time()
         for category in ACTIVE.keys():
             for handle, player in ACTIVE[category].items():
@@ -28,8 +27,4 @@ if __name__ == '__main__':
                             else:
                                 mw.touch(name=level_name)
                                 mw.touch(name=change_name)
-        elapsed = time.time()-start_time
-        if elapsed>20:
-            print(str(elapsed))
-        if elapsed>0:
-            time.sleep(60.-elapsed)
+       
