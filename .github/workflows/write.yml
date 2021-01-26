@@ -33,6 +33,8 @@ jobs:
             pip install git+https://github.com/microprediction/microprediction.git
             pip install --upgrade getjson
       - name: run config
+        env:
+          WRITE_KEY: ${{ secrets.WRITE_KEY }}
         run: |
           python config.py
       - name: Show git status
