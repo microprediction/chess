@@ -3,7 +3,7 @@ import os
 import json
 from pprint import pprint
 import errno
-import json2html
+from json2html import *
 
 def dump_summary():
   CATEGORIES = ACTIVE.keys()
