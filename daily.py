@@ -1,4 +1,3 @@
-import os
 from getjson import getjson
 from microprediction import MicroWriter
 from config import ACTIVE, mw, URL_TEMPLATE
