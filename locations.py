@@ -23,8 +23,8 @@ def dump_summary():
               if e.errno != errno.EEXIST:
                   os.makedirs(directory)
                   
-           with open(summary_file,'wt') as f:
-              json.dump(summary,summary_file)
+           with open(summary_file,'wt') as fp:
+              json.dump(summary,fp=fp)
 
  
 if __name__=='__main__':
