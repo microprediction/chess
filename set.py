@@ -28,8 +28,7 @@ if __name__ == '__main__':
                                 mw.touch(name=level_name)
                                 mw.touch(name=change_name)
         elapsed = time.time()-start_time
-        print(str(elapsed))
+        if elapsed>20:
+            print(str(elapsed))
         if elapsed>0:
             time.sleep(60.-elapsed)
-        else:
-            print('Running behind',flush=True)
