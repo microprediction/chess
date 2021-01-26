@@ -1,8 +1,8 @@
 from getjson import getjson
-from config import ACTIVE, URL_TEMPLATE, CATEGORIES, mw
+from config import ACTIVE, URL_TEMPLATE, mw
 
 if __name__ == '__main__':
-    for category in CATEGORIES:
+    for category in ACTIVE.keys():
         for handle, player in ACTIVE[category].items():
             url = URL_TEMPLATE.replace('HANDLE', handle.lower())
             data = getjson(url)
