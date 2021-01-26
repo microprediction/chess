@@ -11,7 +11,7 @@ def dump_summary():
       for handle, player in ACTIVE[category].items():
            summary = {'urls':{'stats':URL_TEMPLATE.replace('HANDLE', handle.lower() ),
                               'home':HOME_TEMPLATE.replace('HANDLE', handle.lower() ),
-                              'raw':'https://raw.githubusercontent.com/microprediction/chess/main/analysis/'+handle.lower()'/'+category+'/locations.json',
+                              'raw':'https://raw.githubusercontent.com/microprediction/chess/main/analysis/'+handle.lower()+'/'+category+'/locations.json',
                               'level': stream_url(category=category,handle=handle, stream_type='level'),
                               'change':stream_url(category=category,handle=handle, stream_type='change'),
                               'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
