@@ -34,6 +34,11 @@ jobs:
             pip install --upgrade getjson
             pip install json2html
             pip install torsimany
+      - name: config 
+        env:
+          WRITE_KEY: ${{ secrets.WRITE_KEY }}
+        run: |
+          python config.py
       - name: locations
         env:
           WRITE_KEY: ${{ secrets.WRITE_KEY }}
