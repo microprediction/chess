@@ -4,6 +4,8 @@ import json
 from pprint import pprint
 import errno
 from json2html import *
+import time
+update_time = time.time()
 
 def dump_summary():
   CATEGORIES = ACTIVE.keys()
@@ -14,7 +16,9 @@ def dump_summary():
                               'raw':'https://raw.githubusercontent.com/microprediction/chess/main/analysis/'+handle.lower()+'/'+category+'/locations.json',
                               'level': stream_url(category=category,handle=handle, stream_type='level'),
                               'change':stream_url(category=category,handle=handle, stream_type='change'),
-                              'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
+                              'daily':stream_url(category=category,handle=handle, stream_type='daily')},
+                      'timestamp':time.time()
+                     }
            pprint(summary)
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()+os.path.sep+category
            summary_json_file = directory+os.path.sep+'locations.json'
