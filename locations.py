@@ -28,7 +28,7 @@ def dump_summary():
            with open(summary_json_file,'wt') as fp:
               json.dump(summary,fp=fp)
               
-           summary_html = json2html(summary)
+           summary_html = json2html.convert(summary)
            with open(summary_html_file,'wt') as fp:
               write(summary_html)
 
