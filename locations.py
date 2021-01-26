@@ -4,6 +4,7 @@ import json
 from pprint import pprint
 import errno
 from json2html import *
+import torsimany
 from torsimany.torsimany import justdoit
 
 def dump_summary():
@@ -35,7 +36,7 @@ def dump_summary():
            with open(summary_html_file,'wt') as fp:
                fp.write(summary_html)
                 
-           torsimany.justdoit(input_file=summary_json_file,output_file=summary_md_file)
+           justdoit(input_file=summary_json_file,output_file=summary_md_file)
 
  
 if __name__=='__main__':
