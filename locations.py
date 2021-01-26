@@ -5,7 +5,7 @@ from pprint import pprint
 import errno
 from json2html import *
 import torsimany
-from torsimany.torsimany import justdoit
+from torsimany.torsimany import parseJSON
 
 def dump_summary():
   CATEGORIES = ACTIVE.keys()
@@ -21,6 +21,7 @@ def dump_summary():
            summary_json_file = directory+os.path.sep+'locations.json'
            summary_html_file = directory+os.path.sep+'locations.html'
            summary_md_file = directory+os.path.sep+'locations.md'
+            
            
             
            try:
@@ -36,7 +37,9 @@ def dump_summary():
            with open(summary_html_file,'wt') as fp:
                fp.write(summary_html)
                 
-           justdoit(input_file=summary_json_file,output_file=summary_md_file)
+           summary_md = parseJSON(json_data=summary, depth=0)
+           with open(summary_md_file,'wt') as fp:
+               fp.write(summary_md) 
 
  
 if __name__=='__main__':
