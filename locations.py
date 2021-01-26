@@ -13,6 +13,7 @@ def dump_summary():
       for handle, player in ACTIVE[category].items():
            summary = {'urls':{'stats':URL_TEMPLATE.replace('HANDLE', handle.lower() ),
                               'home':HOME_TEMPLATE.replace('HANDLE', handle.lower() ),
+                              'raw':'https://raw.githubusercontent.com/microprediction/chess/main/analysis/'+handle.lower()'/'+category+'/locations.json',
                               'level': stream_url(category=category,handle=handle, stream_type='level'),
                               'change':stream_url(category=category,handle=handle, stream_type='change'),
                               'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
@@ -20,9 +21,8 @@ def dump_summary():
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()+os.path.sep+category
            summary_json_file = directory+os.path.sep+'locations.json'
            summary_html_file = directory+os.path.sep+'locations.html'
-           summary_md_file = directory+os.path.sep+'locations.md'
+           readme_md_file = directory+os.path.sep+'README.md'
             
-           
             
            try:
               os.makedirs(directory)
@@ -37,9 +37,9 @@ def dump_summary():
            with open(summary_html_file,'wt') as fp:
                fp.write(summary_html)
                 
-           summary_md = parseJSON(summary, depth=0)
-           with open(summary_md_file,'wt') as fp:
-               fp.write(summary_md) 
+           with open(readme_md_file,'wt') as fp:
+               fp.write('### Analysis for ' + handle )
+               fp.write('- View [raw]('+summary['raw']+') markdown for links to streams') 
 
  
 if __name__=='__main__':
