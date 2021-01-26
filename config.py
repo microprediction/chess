@@ -1,3 +1,6 @@
+from microprediction import MicroWriter
+import json
+
 # Microprediction writer 
 write_key = os.environ.get('WRITE_KEY')    # GitHub action needs to set env variable. You need to create a GitHub secret called WRITE_KEY
 mw = MicroWriter(write_key=write_key)
@@ -47,3 +50,5 @@ if __name__=='__main__':
    # Ensures no syntax errors
    from pprint import pprint
    pprint(ACTIVE)
+   with open('players.json') as f:
+       json.dump(ACTIVE,f)
