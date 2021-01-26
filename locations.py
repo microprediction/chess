@@ -3,6 +3,7 @@ import os
 import json
 from pprint import pprint
 import errno
+import json2html
 
 def dump_summary():
   CATEGORIES = ACTIVE.keys()
@@ -15,7 +16,8 @@ def dump_summary():
                               'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
            pprint(summary)
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()+os.path.sep+category
-           summary_file = directory+os.path.sep+'locations.json'
+           summary_json_file = directory+os.path.sep+'locations.json'
+           summary_html_file = directory+os.path.sep+'locations.html'
             
            try:
               os.makedirs(directory)
@@ -23,8 +25,12 @@ def dump_summary():
               if e.errno != errno.EEXIST:
                   os.makedirs(directory)
                   
-           with open(summary_file,'wt') as fp:
+           with open(summary_json_file,'wt') as fp:
               json.dump(summary,fp=fp)
+              
+           summary_html = json2html(summary)
+           with open(summary_html_file,'wt') as fp:
+              write(summary_html)
 
  
 if __name__=='__main__':
