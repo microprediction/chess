@@ -15,7 +15,7 @@ def dump_summary():
                               'daily':stream_url(category=category,handle=handle, stream_type='daily')}}
            pprint(summary)
            directory = ANALYSIS_DIR+os.path.sep+handle.lower()+os.path.sep+category
-           summary_file = directory+os.path.sep+'summary.json'
+           summary_file = directory+os.path.sep+'locations.json'
             
            try:
               os.makedirs(directory)
