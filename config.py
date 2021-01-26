@@ -55,5 +55,5 @@ if __name__=='__main__':
    # Ensures no syntax errors
    from pprint import pprint
    pprint(ACTIVE)
-   with open('players.json') as f:
+   with open('players.json','wt') as f:
        json.dump(ACTIVE,f)
