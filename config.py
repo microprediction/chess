@@ -43,7 +43,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                           'PeterDoggers':'peter doggers',
                          'MikeKlein':'mike klein',
                          'DanielRensch':'daniel rensch',
-                         'ruzomberok':'martin lokander'
+                         'ruzomberok':'martin lokander',
+                         'viswanath270':'viswanath thatha'
                   },
           'chess_bullet':{'Hikaru': 'hikaru nakamura',
                    'Firouzja2003': 'alireza firouzja',
@@ -57,7 +58,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                           'erik':'erick allebest',
                           'Trilobe8':'nik sykiotis',
                           'PeterDoggers':'peter doggers',
-                          'ruzomberok':'martin lokander'
+                          'ruzomberok':'martin lokander',
+                         'viswanath270':'viswanath thatha'
                    },
           'chess_rapid':{'Hikaru': 'hikaru nakamura',
                          'Firouzja2003': 'alireza firouzja',
@@ -65,7 +67,8 @@ ACTIVE = {'chess_blitz':{'Hikaru': 'hikaru_nakamura',
                          'LyonBeast': 'maxime vachier lagrave',
                          'nihalsarin': 'nihal sarin',
                          'DanielNaroditsky': 'daniel naroditsky',
-                        'ruzomberok':'martin lokander'}
+                        'ruzomberok':'martin lokander',
+                         'viswanath270':'viswanath thatha'}
                        }
 
 if __name__=='__main__':
